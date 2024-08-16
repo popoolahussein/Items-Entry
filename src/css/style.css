@@ -1,0 +1,182 @@
+/*? Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: black;
+  color: whitesmoke;
+}
+
+/*? Main Layout */
+main {
+  display: grid;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  
+}
+
+/*? Form Section */
+.newItemEntry {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: none;
+}
+
+.offscreen {
+  text-align: center;
+  color: #4a90e2;
+}
+
+.newItemEntry__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.newItemEntry__input {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 1rem;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.newItemEntry__button {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  cursor: pointer;
+  margin-top: 14px;
+  align-self: flex-start;
+  margin-left: auto;
+}
+
+.newItemEntry__button:hover {
+  background-color: #357abd;
+}
+
+/*? List Section */
+.listContainer {
+  margin-top: 20px;
+}
+
+.listTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.listTitle__button {
+  background-color: #e94e77;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.listTitle__button:hover {
+  background-color: #d43f63;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.item input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.item label {
+  flex-grow: 1;
+  margin-right: 0.5rem;
+}
+
+.item button {
+  background-color: #e94e77;
+  color: #fff;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.item button:hover {
+  background-color: #d43f63;
+}
+
+/*? Responsive Design */
+@media (min-width: 768px) {
+  .item {
+    padding: 0.75rem;
+  }
+
+  .listTitle__button, .newItemEntry__button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/*? Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  color: black;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
